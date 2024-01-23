@@ -1,11 +1,13 @@
-# Test your FastAPI endpoints
+POST http://localhost:8000/add-recipe
+Content-Type: application/json
+
+{
+  "name": "stew",
+  "ingredients": [{"name": "butter", "amount": 2, "metric": "cups" }, {"name": "sugar", "amount": 1, "metric": "teaspoon" }],
+  "steps": ["cook the meat", "add the butter", "enjoy"]
+}
+
+###
 
 GET http://127.0.0.1:8000/
 Accept: application/json
-
-###
-
-GET http://127.0.0.1:8000/hello/User
-Accept: application/json
-
-###
